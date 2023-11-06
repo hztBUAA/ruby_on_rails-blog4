@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog4</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application"%>
+    <%= javascript_include_tag 'application' %>
+
+  </head>
+
+  <body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Blog4</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <%= link_to 'Existing Users', users_index_path, class: "nav-link#{" active" if controller_name == "users"}" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Show Blogs', blogs_path, class: "nav-link#{" active" if controller_name == "blogs"}" %>
+          </li>
+        </ul>
+      </div >
+      <% if current_user %>
+        <span class="navbar-text">Hello <%= current_user.user_name %></span>&nbsp; &nbsp;
+        <%= link_to 'User profile', users_show_path,  class: "btn btn-primary d-flex" %>&nbsp;
+        <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: "btn btn-secondary d-flex" %>
+      <% else %>
+        <%= link_to 'Login', new_user_session_path, class: "btn btn-primary d-flex" %>&nbsp;
+        <%= link_to 'Sign up', new_user_registration_path, class: "btn btn-secondary d-flex" %>
+      <% end %>
+    </div>
+  </nav>
+
+  <!-- 用来提示信息-->
+
+  <% if notice%>
+      <div style= "margin: 0" class="alert alert-success alert-dismissible fade show" role="alert">
+        <p class="notice  alert-success"  ><%= notice %></p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+  <%end %>
+  <%if alert %>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <p class="notice  alert-success"  ><%= alert %></p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+  <%end %>
+
+<!--  页面标题-->
+
+<!--js逻辑被吞掉了可能-->
+  <div class="container">
+    <div class="row">
+<!--      左半边-->
+      <div class="col">
+        <div >
+          <div style= "margin: 0" class="alert alert-success alert-dismissible fade show" role="alert">
+            <p class="notice  alert-success"  >
+              <% if current_user %>
+                <%= current_user.user_name %> Logged in.<br/>
+                <%#= link_to 'Logout', logout_users_path %>
+              <% else %>Please <%= link_to 'Login', new_user_session_path %>
+              <% end %>
+            </p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+
+          <!--        轮播图动画-->
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <%= image_tag '1.jpg', class: 'd-block w-100', style: 'max-height: 400px;' %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag '2.jpg', class: 'd-block w-100', style: 'max-height: 400px;' %>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <%#= link_to "Sign up", new_user_registration_path%>
+        </div>
+      </div>
+      <div class="col">
+        <div id="main-panel">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- 页面尾巴-->
+    <footer class="py-5">
+      Copyright hzt &copy; 2023/10/23 21:55
+      <hr>
+      DO NOT COPY AT YOUR RISK
+      <hr>
+      <strong>hzt   love   xjl forever</strong>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<h2>Edit Profile></h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <div class="field">
+    <%= f.label :user_name,class: "form-label"%><br />
+    <%= f.text_field :user_name, class: "form-control",autofocus: true, autocomplete: "name" %>
+  </div>
+  <br />
+  <div class="field">
+    <%= f.label :email, class: "form-label"%><br />
+    <%= f.email_field :email, class: "form-control",autofocus: true, autocomplete: "email" %>
+  </div>
+  <br />
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+  <br />
+  <div class="field">
+    <%= f.label :new_password ,class: "form-label"%> <i>(leave blank if you don't want to change it)</i><br />
+    <%= f.password_field :new_password, class: "form-control", autocomplete: "new_password" %>
+    <% if @minimum_password_length %>
+
+      <em><%= @minimum_password_length %> characters minimum</em>
+    <% end %>
+  </div>
+        <br />
+  <div class="field">
+    <%= f.label :new_password_confirmation,class: "form-label" %><br />
+    <%= f.password_field :new_password_confirmation, class: "form-control", autocomplete: "new-password-confirmation" %>
+  </div>
+  <br />
+  <div class="field">
+    <%= f.label :current_password,class: "form-label" %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.password_field :current_password, class: "form-control", autocomplete: "current-password" %>
+  </div>
+<br/>
+
+  <div class="actions">
+    <%= f.submit "Update" , class: "btn btn-primary"%>
+    <%= link_to "Back", :back ,class: "btn btn-primary"%>
+  </div>
+<% end %>
+
+
+<br/>
+
+<!--<h3>Cancel my account</h3>-->
+
+
+
+<br/>
+<!--<div class="spinner-grow" role="status">-->
+<!--  <span class="visually-hidden">Loading...</span>-->
+<!--</div>-->
+
+
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        UnHappy?
+      </button>
+    </h2>
+
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <!--        This is some text within a card body.-->
+      <%= button_to "Cancel my account", registration_path(resource_name),class: "btn btn-primary",data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete %>
+    </div>
+  </div>
+</div>
+</div>
+</div>

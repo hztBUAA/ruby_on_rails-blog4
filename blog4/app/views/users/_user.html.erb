@@ -1,0 +1,27 @@
+<div id="<%= dom_id user %>">
+  <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+    <!--暂时不实现点击user名字 能够到达profile   -->
+      <h1 class="card-title">
+        <%= link_to (user.user_name.present? ? user.user_name : "no name yet"), "#", class: "no_under_line" %>
+      </h1>
+
+      <h4 class="card-subtitle mb-2 text-muted">
+      <%= user.email %>
+    </h4>
+    <p class="card-text blog_content_text fst-italic">
+<!--      增加描述-->
+      <%#= user.description %>
+    </p>
+    <hr/>
+  </div>
+
+</div>
+<style>
+    .no_under_line{
+        text-decoration: none;
+    }
+    .blog_content_text{
+        font-size: larger;
+        font-family: "Comic Sans MS", sans-serif;
+    }
+</style>
