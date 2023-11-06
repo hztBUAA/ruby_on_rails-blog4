@@ -4,10 +4,10 @@
 
 
 
-<div id="blogs">
-  <% @blogs.each do |blog| %>
-    <%= render blog %>
-  <% end %>
+<div  class="container-fluid">
+  <div id="blogs" class="row">
+    <%= render @blogs %>
+  </div>
 </div>
 
 <%= link_to "New blog", new_blog_path , class: "btn btn-success" if current_user%>
