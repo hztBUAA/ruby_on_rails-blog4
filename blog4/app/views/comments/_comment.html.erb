@@ -1,7 +1,9 @@
 <div id="comment_<%= comment.id %>" class="row">
   <div class="col">
     Posted by <%= comment.user.user_name %>
-    <%= time_ago_in_words(comment.created_at) %> ago. <br>
+    <%= time_ago_in_words(comment.created_at) %> ago.
+    <%= button_to "Delete", blog_comment_path(comment.blog.id,comment.id), method: :delete %>
+    <br>
     <div class="card">
       <div class="card-body">
         <%= comment.content %>

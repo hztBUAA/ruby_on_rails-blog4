@@ -1,4 +1,4 @@
-<p style="color: green"><%= notice %></p>
+
 <!--怎么理解_blog中的可以直接使用blog-->
 <%= render @blog %>
 <hr/>
@@ -32,12 +32,12 @@
   <%= render @blog.comments %>
 </div>
 <div class="row">
-  <%= form_for [@blog, Comment.new] do |form| %>
+  <%= form_for [@blog, Comment.new]  , id: 'new_comment' do |form| %>
+<%#= form_for comment ,remote: true , id: 'new_comment' do |form| %>
     <div class="mb-3">
       <%#= form.label :content, class: "form-label" %>
       <%= form.text_area :content, class: "form-control ",value: "说些什么" %>
     </div>
-
     <div class="mb-3">
       <%= form.submit "Add Comment", class: "btn btn-primary" %>
     </div>

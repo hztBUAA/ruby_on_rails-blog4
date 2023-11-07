@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f632f59-193c-437a-ad7d-9405e0a7ac15" name="Changes" comment="实现card样式的鼠标点击">
+      <change afterPath="$PROJECT_DIR$/blog4/app/controllers/followships_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog4/app/models/followship.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog4/app/views/comments/create.js.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog4/app/views/followships/_follow_button.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog4/app/views/followships/create.js.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog4/app/views/followships/destroy.js.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog4/app/views/users/create.js.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/.idea/blog4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/.idea/blog4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/assets/stylesheets/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/controllers/comments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/controllers/comments_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/javascript/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/javascript/controllers/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/javascript/controllers/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/views/blogs/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/views/blogs/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/views/comments/_comment.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/views/comments/_comment.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/views/comments/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/views/comments/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/views/comments/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/views/comments/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/views/comments/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/views/comments/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/views/users/_user.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/views/users/_user.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/app/views/users/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/db/development.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/log/development.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/1z/1ztSwPSE6qGHYPhdgep8LDnBRBjoJ32Sw-L0bXneX2U.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/1z/1ztSwPSE6qGHYPhdgep8LDnBRBjoJ32Sw-L0bXneX2U.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/6I/6I57C3d7qVriZ0r3I99TL4ipDVtNb6WMbr1oag6rG6c.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/6I/6I57C3d7qVriZ0r3I99TL4ipDVtNb6WMbr1oag6rG6c.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/6O/6OPgfnc-1DsY7txjJ3_knGuktrHeowpWyVfotPvDvik.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/6O/6OPgfnc-1DsY7txjJ3_knGuktrHeowpWyVfotPvDvik.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/6i/6iN_c9N2SGQDTXcAAm4zOPFivXndCTp2WDWagj4kt0U.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/6i/6iN_c9N2SGQDTXcAAm4zOPFivXndCTp2WDWagj4kt0U.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/8o/8o3x_oGcC1yDlqSXLAM82xiFpUCrT3NaZLnXOEOVOoI.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/8o/8o3x_oGcC1yDlqSXLAM82xiFpUCrT3NaZLnXOEOVOoI.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/9i/9iODiMhTi_l3uVuCHfHyk9eRmpqljEjQ0H8TUkrBBCM.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/9i/9iODiMhTi_l3uVuCHfHyk9eRmpqljEjQ0H8TUkrBBCM.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/AR/ARFsuHbGzX45-aIGGmjz9W_n7sExCqsHLdWed-Gs_XM.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/AR/ARFsuHbGzX45-aIGGmjz9W_n7sExCqsHLdWed-Gs_XM.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/DL/DLwMjgFv3_qK5AniIbtnoCERoWGtxhvcF9YBojDfwVk.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/DL/DLwMjgFv3_qK5AniIbtnoCERoWGtxhvcF9YBojDfwVk.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/DP/DP-mD0h9FO56ZIsTw_BUuEvVTUb0yDJoJkowur21XvI.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/DP/DP-mD0h9FO56ZIsTw_BUuEvVTUb0yDJoJkowur21XvI.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/E5/E51ehztyTwGALHKhXDTwbbyRCgJxZepSz8ycbTlpRU8.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/E5/E51ehztyTwGALHKhXDTwbbyRCgJxZepSz8ycbTlpRU8.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/G9/G98K8Gc4ay1m9QXe4A-NcGUmqumOdNJBKXBdVa26iqk.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/G9/G98K8Gc4ay1m9QXe4A-NcGUmqumOdNJBKXBdVa26iqk.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/HZ/HZTHN-GrMAonBaQswo_WDTRfeu8SosjLZtYyux3g05Q.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/HZ/HZTHN-GrMAonBaQswo_WDTRfeu8SosjLZtYyux3g05Q.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/Jx/JxxTHE1_zfvoErcfWAKtrerez0g7BcloDG5JQpyhZHI.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/Jx/JxxTHE1_zfvoErcfWAKtrerez0g7BcloDG5JQpyhZHI.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/KX/KXSFblK9szzwS3BwYH4__OqjiCJvRmh5KVZzi12GDdA.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/KX/KXSFblK9szzwS3BwYH4__OqjiCJvRmh5KVZzi12GDdA.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/MA/MAi1skF4Bts9AqGHiBHje29JGpvOYVihFvsAdOaYOok.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/MA/MAi1skF4Bts9AqGHiBHje29JGpvOYVihFvsAdOaYOok.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/NZ/NZCKaNlmXOb1lZkYaiG4Rt5sdILP5sukoeBavO-ivlw.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/NZ/NZCKaNlmXOb1lZkYaiG4Rt5sdILP5sukoeBavO-ivlw.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/SG/SGJWO_UmangseCAg2x4vLUU5mtJxoDnyzTluNAqcyfc.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/SG/SGJWO_UmangseCAg2x4vLUU5mtJxoDnyzTluNAqcyfc.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/_q/_q_904cW7v9D87BTZ3QBSeYiBadHD4EKwDQTsP1H2qc.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/_q/_q_904cW7v9D87BTZ3QBSeYiBadHD4EKwDQTsP1H2qc.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/cg/cgiTcY2Y-RXMS7v9n3fIUhLauFB3YPJgbTTvlwTJkfY.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/cg/cgiTcY2Y-RXMS7v9n3fIUhLauFB3YPJgbTTvlwTJkfY.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/dG/dGUocwud_OBMwk5U0kOEI9xDHIWaem8sXDvnaCNWl84.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/dG/dGUocwud_OBMwk5U0kOEI9xDHIWaem8sXDvnaCNWl84.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/dj/djtXihsJSqZlO1dA7LyCNvosGvE9Cd1E-75z32bOD-0.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/dj/djtXihsJSqZlO1dA7LyCNvosGvE9Cd1E-75z32bOD-0.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/iq/iqs6Z0q8p_u1YFylU50_H7OnkwqvdkvAwdWi8iHaoRI.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/iq/iqs6Z0q8p_u1YFylU50_H7OnkwqvdkvAwdWi8iHaoRI.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/oX/oX-5de4THmCPWRzYo8-B15zAaUrUNW5EnyviaoZahck.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/oX/oX-5de4THmCPWRzYo8-B15zAaUrUNW5EnyviaoZahck.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/ov/oveGadZOl0yH6KuPVLqrph1wNZpmkWJybTcBoZ7hs4E.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/ov/oveGadZOl0yH6KuPVLqrph1wNZpmkWJybTcBoZ7hs4E.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/uz/uzvdjSqcJmeLYDFzVHIAaUlD54ba2l2SHnpQVLs-RC0.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/uz/uzvdjSqcJmeLYDFzVHIAaUlD54ba2l2SHnpQVLs-RC0.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/x5/x5aV_HZ3thXOYtgCETK5SRefZj7R9WOGQEtASmSOL-Q.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/x5/x5aV_HZ3thXOYtgCETK5SRefZj7R9WOGQEtASmSOL-Q.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/zu/zu0zu7lucn9_YplR9NqEOsB3huJ-tdmgaQIUQqWzkEU.cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/assets/sprockets/v4.0.0/zu/zu0zu7lucn9_YplR9NqEOsB3huJ-tdmgaQIUQqWzkEU.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/0b/23655b69f3dd7e" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/0b/23655b69f3dd7e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/0b/b4ebb801c69c49" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/0b/b4ebb801c69c49" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/18/88a2a7baf08636" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/18/88a2a7baf08636" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/19/5bf6e8697feaf3" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/19/5bf6e8697feaf3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/28/2ee3e979107da4" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/28/2ee3e979107da4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/4b/93a93e1c0b450a" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/4b/93a93e1c0b450a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/63/e81e5bed0d5061" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/63/e81e5bed0d5061" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/70/9a74a447146efa" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/70/9a74a447146efa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/71/dc4886707addc9" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/71/dc4886707addc9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/73/5616ebd12cc5da" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/73/5616ebd12cc5da" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/80/333dc50891e50c" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/80/333dc50891e50c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/87/557a90e6e2faaf" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/87/557a90e6e2faaf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/89/075d7f153a5797" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/89/075d7f153a5797" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/9b/e7053207336022" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/9b/e7053207336022" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/9d/2cfd6c653b3ddb" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/9d/2cfd6c653b3ddb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/ad/388dc329174e98" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/ad/388dc329174e98" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/e9/35ee75bb55ca85" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/e9/35ee75bb55ca85" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/ef/63ffd912167451" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/compile-cache-iseq/ef/63ffd912167451" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/load-path-cache" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/cache/bootsnap/load-path-cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog4/tmp/pids/server.pid" beforeDir="false" afterPath="$PROJECT_DIR$/blog4/tmp/pids/server.pid" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Ruby Class" />
+        <option value="ERB File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2XnNwCrLmhoLd0EDhFuYbsr9y33" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubantu\home\hzt\ruby\has_been\blog4\app\views\users" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f632f59-193c-437a-ad7d-9405e0a7ac15" name="Changes" comment="" />
+      <created>1699261119764</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699261119764</updated>
+      <workItem from="1699261120903" duration="3640000" />
+      <workItem from="1699265958220" duration="340000" />
+      <workItem from="1699269699786" duration="2566000" />
+      <workItem from="1699286645114" duration="1888000" />
+      <workItem from="1699321701896" duration="11091000" />
+      <workItem from="1699337730829" duration="656000" />
+      <workItem from="1699350778284" duration="827000" />
+      <workItem from="1699355338717" duration="314000" />
+    </task>
+    <task id="LOCAL-00001" summary="实现card样式的鼠标点击">
+      <option name="closed" value="true" />
+      <created>1699330116133</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699330116133</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="实现card样式的鼠标点击" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现card样式的鼠标点击" />
+  </component>
+</project>

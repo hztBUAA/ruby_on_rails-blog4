@@ -1,0 +1,9 @@
+<!-- app/views/users/_follow_button.html.erb -->
+
+<% if current_user.following?(user) %>
+  <%= button_to "Unfollow", unfollow_path(user.id),method: :delete, class: "btn btn-primary", remote: true,data: { turbo: false } %>
+<% else %>
+<!--  <div><%#= user.followings %></div>-->
+<!--  <div><%#= user.followers %></div>-->
+  <%= button_to "Follow", follow_path(user.id),method: :post, class: "btn btn-primary", remote: true ,data: { turbo: false }%>
+<% end %>

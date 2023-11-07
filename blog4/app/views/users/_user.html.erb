@@ -2,12 +2,24 @@
   <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
     <!--暂时不实现点击user名字 能够到达profile   -->
       <h1 class="card-title">
-        <%= link_to (user.user_name.present? ? user.user_name : "no name yet"), "#", class: "no_under_line" %>
+        <%= link_to (user.user_name.present? ? user.user_name : "no name yet"), "/users/#{user.id}", class: "no_under_line" %>
       </h1>
-
       <h4 class="card-subtitle mb-2 text-muted">
-      <%= user.email %>
-    </h4>
+        <%= user.email %>
+      </h4>
+     <h4 class="card-subtitle mb-2 text-muted">
+        被<%= user.followers.count %>人关注:
+     </h4>
+    <% user.followers.each do |follower| %>
+      <%= follower.user_name %>,
+    <% end %>
+    <div id="follow-buttons">
+      <%= render partial: 'followships/follow_button', locals: { user: user } %>
+    </div>
+<!--    <div>-->
+      <%#= link_to "Follow", "#",class: "btn btn-primary" %>
+      <%#= link_to "UnFollow", "#",class: "btn btn-primary" %>
+<!--    </div>-->
     <p class="card-text blog_content_text fst-italic">
 <!--      增加描述-->
       <%#= user.description %>

@@ -1,8 +1,18 @@
 Rails.application.routes.draw do
   get 'users/index'
+
+  devise_for :users
   devise_scope :user do
     get 'users/:id', to: 'users#show', as: :user
+    post 'follow/:id', to: 'followships#create' , as: :follow
+    delete 'unfollow/:id', to: 'followships#destroy', as: :unfollow
   end
+    
+  # resources :users do
+  #   member do
+  #
+  #   end
+  # end
   # resources :users do
   #   collection do
   #     get 'login'
@@ -13,7 +23,7 @@ Rails.application.routes.draw do
   # devise_for :users, controllers: {
   #   sessions: 'users/sessions'
   # }
-  devise_for :users
+
 
 
    #resources :comments

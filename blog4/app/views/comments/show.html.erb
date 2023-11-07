@@ -3,8 +3,7 @@
 <%= render @comment %>
 
 <div>
-  <%= link_to "Edit this comment", edit_comment_path(@comment) %> |
-  <%= link_to "Back to comments", comments_path %>
-
-  <%= button_to "Destroy this comment", @comment, method: :delete %>
+  <%= link_to "Edit", edit_blog_comment_path(@blog.id,@comment.id) %> |
+  <%= link_to "Back", blog_comments_path(@blog.id) %>
+  <%= link_to "Destroy this comment", blog_comment_path(@blog.id,@comment.id), method: :delete %>
 </div>

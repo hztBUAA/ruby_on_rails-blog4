@@ -1,10 +1,6 @@
 <%#include Devise::Controllers::Helpers %>
 <h2>Profile</h2>
-<div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
-</div>
+
 <div class="card" style="width: 30rem;">
   <div class="card-body">
     <h1 class="card-title"><%=  @user.user_name%></h1>
@@ -12,6 +8,21 @@
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 <!--    <a href="#" class="card-link">Card link</a>-->
 <!--    <a href="#" class="card-link">Another link</a>-->
+      <div>
+        <h4 class="card-subtitle mb-2 text-muted">
+          粉丝数量：<%= @user.followings.count %>人
+        </h4>
+      </div>
+    <div>
+      <h4 class="card-subtitle mb-2 text-muted">
+        还关注了<%= @user.followings.count %>人
+      </h4>
+    </div>
+    <div>
+      <%= link_to "Follow", "#",class: "btn btn-primary" %>
+      <%= link_to "UnFollow", "#",class: "btn btn-primary" %>
+    </div>
+<hr/>
     <% if @current_user  == @user %>
       <%= link_to "Edit", edit_user_registration_url,class: "btn btn-primary" %>
       <% else%>
