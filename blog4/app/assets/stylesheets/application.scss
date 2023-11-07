@@ -17,3 +17,9 @@
 /* *!*/
 
 @import "bootstrap";
+
+.not_edit{
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

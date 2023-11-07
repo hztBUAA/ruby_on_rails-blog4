@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'users/index'
-  get 'users/show'
+  devise_scope :user do
+    get 'users/:id', to: 'users#show', as: :user
+  end
   # resources :users do
   #   collection do
   #     get 'login'
@@ -12,6 +14,7 @@ Rails.application.routes.draw do
   #   sessions: 'users/sessions'
   # }
   devise_for :users
+
 
    #resources :comments
   resources :blogs do

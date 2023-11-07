@@ -1,6 +1,10 @@
 <%#include Devise::Controllers::Helpers %>
 <h2>Profile</h2>
-
+<div class="card">
+  <div class="card-body">
+    This is some text within a card body.
+  </div>
+</div>
 <div class="card" style="width: 30rem;">
   <div class="card-body">
     <h1 class="card-title"><%=  @user.user_name%></h1>
@@ -8,7 +12,11 @@
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 <!--    <a href="#" class="card-link">Card link</a>-->
 <!--    <a href="#" class="card-link">Another link</a>-->
-    <%= link_to "Edit", edit_user_registration_url,class: "btn btn-primary" %>
+    <% if @current_user  == @user %>
+      <%= link_to "Edit", edit_user_registration_url,class: "btn btn-primary" %>
+      <% else%>
+      <%= link_to "Edit", edit_user_registration_url,class: "btn btn-primary not_edit" %>
+      <% end%>
     <%= link_to "Back", blogs_path,class: "btn btn-secondary" %>
   </div>
 </div>

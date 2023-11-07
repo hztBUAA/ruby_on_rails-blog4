@@ -6,7 +6,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = current_user
+    # @user = current_user
+    @user = User.find(params[:id])
+    @current_user = current_user
     # @blogs = current_user.blogs.find[:]
     # @comment = current_user.blogs
   end

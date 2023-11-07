@@ -1,15 +1,16 @@
 <div id="<%= dom_id blog %>">
-  <div class="card-body">
-    <h1 class="card-title"><%= link_to blog.title, blog,class: "no_under_line"%></h1>
-    <h3 class="card-subtitle mb-2 text-muted">
-      Post by <%= link_to blog.user.user_name, users_show_path,class: "no_under_line"%> <%= time_ago_in_words blog.created_at %> ago.
-    </h3>
-    <p class="card-text blog_content_text fst-italic">
-      <%= blog.content %>
-    </p>
-    <hr/>
+  <div class="card"  >
+    <div class="card-body">
+      <h1 class="card-title"><%= link_to blog.title, blog,class: "no_under_line"%></h1>
+      <h3 class="card-subtitle mb-2 text-muted">
+        Post by <%= link_to blog.user.user_name, user_path(blog.user),class: "no_under_line"%> <%= time_ago_in_words blog.created_at %> ago.
+      </h3>
+      <p class="card-text blog_content_text fst-italic" onclick="window.location='<%= blog_path(blog) %>'" style="cursor: pointer;">
+        <%= blog.content %>
+      </p>
+      <hr/>
+    </div>
   </div>
-
 </div>
 <style>
   .no_under_line{
