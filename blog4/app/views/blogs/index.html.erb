@@ -3,6 +3,21 @@
 <h1>Blogs</h1>
 
 
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item ">
+      <!--        <a class="page-link" href="/users/index?page=#{}">Previous</a>-->
+      <%= link_to "Previous" ,blogs_path(page: @in_page.to_i == 1 ? 1 : @in_page.to_i - 1) ,class: "page-link"%>
+    </li>
+    <li class="page-item"><span class="page-link"><%= @in_page.to_i %></span></li>
+    <!--      <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+    <!--      <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+    <li class="page-item">
+      <%= link_to "Next" ,blogs_path(page: @in_page.to_i == @max_page.to_i ? @max_page : @in_page.to_i + 1),class: "page-link"%>
+    </li>
+  </ul>
+</nav>
+
 
 <div  class="container-fluid">
   <div id="blogs" class="row">

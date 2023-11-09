@@ -2,7 +2,14 @@ class UsersController < ApplicationController
   include Devise::Controllers::Helpers
   before_action :authenticate_user!
   def index
-    @users = User.all
+    users_in_one_page = 2;
+    # @course=current_user.courses.paginate(:page=>params[:page],:per_page=>5)
+    @users = User.all.paginate(:page=>params[:page],:per_page=>users_in_one_page)
+    @in_page = params[:page] ? params[:page]:1
+    @max_page = User.all.count.to_i / users_in_one_page
+    if User.all.count.to_i % users_in_one_page != 0
+      @max_page += 1
+    end
   end
 
   def show

@@ -4,7 +4,13 @@ class BlogsController < ApplicationController
 
   # GET /blogs or /blogs.json
   def index
-    @blogs = Blog.all
+    blogs_in_one_page = 2
+    @in_page = params[:page] ? params[:page] : 1
+    @max_page = Blog.all.count.to_i / blogs_in_one_page
+    if Blog.all.count.to_i % blogs_in_one_page != 0
+      @max_page += 1
+    end
+    @blogs = Blog.all.paginate(:page=>params[:page],:per_page=>blogs_in_one_page)
   end
 
   # GET /blogs/1 or /blogs/1.json
