@@ -9,7 +9,9 @@
       </div>
     </div>
     <hr/>
-    <%= button_to "Delete", blog_comment_path(comment.blog.id,comment.id), method: :delete,class: "btn btn-primary"%>
+    <%if current_user == comment.user%>
+      <%= button_to "Delete", blog_comment_path(comment.blog.id,comment.id), method: :delete,class: "btn btn-primary"%>
+  <%end %>
   </div>
 </div>
 <hr>

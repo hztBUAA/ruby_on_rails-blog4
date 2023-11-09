@@ -15,6 +15,8 @@ class CommentsController < ApplicationController
   def show
     @blog = Blog.find(params[:blog_id])
     @comments = @blog.comments.find_by(params[:id])
+    @user = @comment.user
+    @current_user = current_user
   end
 
   # GET /comments/new
