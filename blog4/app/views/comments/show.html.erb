@@ -3,7 +3,7 @@
 <%= render @comment %>
 
 <div>
-  <%= link_to "Edit", edit_blog_comment_path(@blog.id,@comment.id) %> |
-  <%= link_to "Back", blog_comments_path(@blog.id) %>
-  <%= link_to "Destroy this comment", blog_comment_path(@blog.id,@comment.id), method: :delete %>
+  <%= link_to "Edit", edit_blog_comment_path(@blog.id,@comment.id) ,class: "btn btn-primary"%> |
+  <%= link_to "Back", blog_comments_path(@blog.id) ,class: "btn btn-primary"%>
+  <%= link_to "Destroy this comment", blog_comment_path(@blog.id,@comment.id), method: :delete,class: "btn btn-primary" %>
 </div>

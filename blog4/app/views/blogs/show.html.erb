@@ -28,15 +28,18 @@
     <%#= link_to "Show this comment", blog_comment_path(comment) %>
 <!--  </p>-->
 <%# end %>
+
 <div id="comments">
   <%= render @blog.comments %>
 </div>
+<hr/>
+<hr/>
 <div class="row">
-  <%= form_for [@blog, Comment.new]  , id: 'new_comment' do |form| %>
+  <%= form_for [@blog, comment = Comment.new]  , id: 'new_comment' do |form| %>
 <%#= form_for comment ,remote: true , id: 'new_comment' do |form| %>
     <div class="mb-3">
       <%#= form.label :content, class: "form-label" %>
-      <%= form.text_area :content, class: "form-control ",value: "说些什么" %>
+      <%= form.text_area :content, class: "form-control ",placeholder: "说些什么" %>
     </div>
     <div class="mb-3">
       <%= form.submit "Add Comment", class: "btn btn-primary" %>

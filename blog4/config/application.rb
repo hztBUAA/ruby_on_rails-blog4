@@ -23,7 +23,7 @@ module Blog4
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
     config.hosts << "21371024.blog4.rubyapp.act.buaa.edu.cn:9000"
-    config.assets.paths << Rails.root.join(' /home/hzt/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbolinks-5.2.1')
+    # config.assets.paths << Rails.root.join(' /home/hzt/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbolinks-5.2.1')
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files

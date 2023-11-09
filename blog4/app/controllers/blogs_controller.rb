@@ -9,7 +9,6 @@ class BlogsController < ApplicationController
 
   # GET /blogs/1 or /blogs/1.json
   def show
-
     @current_user = current_user
     @comments = @blog.comments
   end

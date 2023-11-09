@@ -7,7 +7,7 @@ class FollowshipsController < ApplicationController
     @user = User.find(params[:id])
     current_user.follow(@user)
     respond_to do |format|
-      # format.js {} # 指定响应格式为 JavaScript
+      format.js {} # 指定响应格式为 JavaScript
       format.html { redirect_to "/users/index" }
 
     end
