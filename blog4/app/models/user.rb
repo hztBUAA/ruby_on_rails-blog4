@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   attribute :user_name, :string
   attribute :phone_number, :string
+  attribute :description, :string
 
   has_many :followships#用户关注的人
   has_many :reverse_followships, class_name: "Followship", foreign_key: "following_user_id"#谁关注了用户

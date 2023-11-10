@@ -35,6 +35,11 @@
     <%= f.password_field :current_password, class: "form-control", autocomplete: "current-password" %>
   </div>
 <br/>
+  <div class="field">
+    <%= f.label :description,class: "form-label" %> <br />
+    <%= f.text_field :description, class: "form-control", autocomplete: "description",placeholder: "个性签名" %>
+  </div>
+  <br/>
 
   <div class="actions">
     <%= f.submit "Update" , class: "btn btn-primary"%>
